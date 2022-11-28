@@ -1,1 +1,1 @@
-# Test
+# Collection of Ruby / RoR notes / docs
