@@ -18,5 +18,11 @@
 
 
 # Rendering and Redirecting -
-  #
+  # Rails will implicitly render a view file that is named the same thing as your controller action, 
+  #there are plenty of situations when you might want to override it. 
+
+  # A main case for this is when you actually want to completely redirect the user to a new 
+  #page instead of rendering the result of your controller action.
+
+  
 
