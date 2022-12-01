@@ -28,6 +28,18 @@
       # If you want to only create the database migration file 
         #(without the Model or any of the test files), just use 
           #$ rails generate migration NameYourMigration
-
-    # To execute: rails db:migrate
-    #
+          
+            # To execute: rails db:migrate
+    
+    
+  # Basic Validations:
+    # Enforcing certain rules, such as a password and username MUST be entered.
+      # Obviously this can be done in HTML, or JS. However malicious attacks can
+        #also be entered.
+          # Doing this at a db level solves that issue.
+            add_index :users, :username, unique: true
+            
+            
+       
+            
+   
