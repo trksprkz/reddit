@@ -30,3 +30,4 @@
           #$ rails generate migration NameYourMigration
 
     # To execute: rails db:migrate
+    #
