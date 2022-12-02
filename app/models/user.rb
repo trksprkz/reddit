@@ -1,11 +1,12 @@
+require 'URI'
 class User < ApplicationRecord
-  validates :username, presence: true, length: [minimum: 4, maximum: 14], uniqueness: true
+  validate :username
 
-  validates :email, presence: true, uniqueness: true, with: EMAIL_REGEX
-    EMAIL_REGEX =^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$
-    def valid_email? email
-      email= EMAIL_REGEX
-    end
+  validate :email
+    validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
 
-  validates :password, presence: true, length: [minimuum: 6, maximum: 8] uniqueness: true
+  validate :password
+
+  validate :id
+
 end
