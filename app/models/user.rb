@@ -1,4 +1,3 @@
-require 'URI'
 class User < ApplicationRecord
   validate :username
 
@@ -8,5 +7,6 @@ class User < ApplicationRecord
   validate :password
 
   validate :id
-
+  @id = :id
+  has_many :posts
 end
