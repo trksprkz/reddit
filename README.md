@@ -1,5 +1,5 @@
 Reduced-Reddit
-A simplified version of Reddit to allow users the ability to create an account to store posts but create postts anoynmously.
+A simplified version of Reddit to allow users the ability to create an account to store posts but create posts anoynmously.
 
 Description
 Reddit is one of mine, and the worlds favorite places to receive unbiased information. In a world full of sponsorships, and story-telling, it helps to get input from someone just wanting to help it.
